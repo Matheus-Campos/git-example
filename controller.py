@@ -1,7 +1,7 @@
 import db
 
-def procurarEstudante(id):
-  estudante = db.findById(id)
+def procurarEstudante(id, name):
+  estudante = db.findById(id, name)
   estudante["nota"] = 10
   return estudante
 
