@@ -1,0 +1,2 @@
+languages = []
+print(len(languages))
