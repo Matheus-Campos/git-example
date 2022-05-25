@@ -8,5 +8,6 @@ if comando == 1:
   print(estudante)
 elif comando == 2:
   idEstudante = int(input("digite o id do estudante a ser deletado: "))
-  mensagem = controller.deletarEstudante(idEstudante)
+  nomeEstudante = input("digite o nome do estudante a ser deletado: ")
+  mensagem = controller.deletarEstudante(idEstudante, nomeEstudante)
   print(mensagem)

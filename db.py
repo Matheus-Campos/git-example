@@ -4,5 +4,6 @@ def findById(registerId):
   registro = [dado for dado in dados if dado["id"] == registerId]
   return registro[0]
 
-def deleteById(registerId):
-  dados = [dado for dado in dados if dado["id"] != registerId]
+def deleteByIdAndName(registerId, name):
+  global dados
+  dados = [dado for dado in dados if (dado["id"] != registerId and dado["nome"] != name)]
